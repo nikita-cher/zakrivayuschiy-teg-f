@@ -8,7 +8,7 @@
   }
 }
 
-html.theme-light {
+:root.theme-light {
   --page-bg: #fff;
   --accent-color: #000;
   --primary-font-regular: 400;
@@ -25,7 +25,7 @@ html.theme-light {
   }
 }
 
-html.theme-dark {
+:root.theme-dark {
   --page-bg: #000;
   --accent-color: #00CC14;
   --primary-font-regular: 465;
