@@ -8,7 +8,9 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  background: var(--page-bg);
+  background: var(--page-bg-color) center / cover;
+  background-image: var(--page-bg-gradient);
+  background-attachment: fixed;
   color: var(--accent-color);
   font-family: var(--primary-font), sans-serif;
   font-variation-settings: 'wght' var(--primary-font-regular);
