@@ -1,21 +1,33 @@
 @media (prefers-color-scheme: light) {
 
   :root {
-
+    --page-bg: #fff;
+    --accent-color: #000;
+    --primary-font-regular: 400;
+    --primary-font-bold: 700;
   }
 }
 
 html.theme-light {
-
+  --page-bg: #fff;
+  --accent-color: #000;
+  --primary-font-regular: 400;
+  --primary-font-bold: 700;
 }
 
 @media (prefers-color-scheme: dark) {
 
   :root {
-
+    --page-bg: #000;
+    --accent-color: #00CC14;
+    --primary-font-regular: 465;
+    --primary-font-bold: 785;
   }
 }
 
 html.theme-dark {
-
+  --page-bg: #000;
+  --accent-color: #00CC14;
+  --primary-font-regular: 465;
+  --primary-font-bold: 785;
 }
