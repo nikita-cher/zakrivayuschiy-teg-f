@@ -1,6 +1,6 @@
 ## ссылка на репозиторий
 
-[github.com/nikita-cher/zakrivayuschiy-teg-f](https://github.com/nikita-cher/zakrivayuschiy-teg-f "Закрывающий тег / Nikita Cher / GitHub)
+[github.com/nikita-cher/zakrivayuschiy-teg-f](https://github.com/nikita-cher/zakrivayuschiy-teg-f "Закрывающий тег / Nikita Cher / GitHub")
 
 
 ## установка плагинов

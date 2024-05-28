@@ -5,7 +5,10 @@
 :root {
   /* setup 👇🏻 */
 
-
+  --primary-font: 'Inter';
+  --accent-font: 'Press Start 2P';
+  --primary-font-regular: 400;
+  --primary-font-bold: 700;
 
   /* layout 👇🏻 */
 
@@ -20,6 +23,6 @@
 
 @media (width >= 1440px) {
   :root {
-    
+
   }
 }
