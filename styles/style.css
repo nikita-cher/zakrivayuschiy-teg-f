@@ -271,9 +271,10 @@
 }
 
 .card__like-button {
+  min-inline-size: 130px;
   position: relative;
   border: 2px solid var(--accent-color);
-  padding: 6px 35px;
+  padding: 6px 20px;
   background: transparent;
   transition: box-shadow 0.3s;
   cursor: pointer;

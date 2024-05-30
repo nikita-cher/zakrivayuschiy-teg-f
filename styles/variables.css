@@ -25,6 +25,8 @@
     linear-gradient(#e7e7e7 0 0.01%, #1a1a1a);
   --label-stroke-color: #fff;
   --button-text-color: var(--primary-color);
+  --like-icon-contour-color: var(--accent-color);
+  --like-icon-fill-color: #f00;
 }
 
 /* mobile 👇🏻 */
