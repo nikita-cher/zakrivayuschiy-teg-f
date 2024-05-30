@@ -24,6 +24,7 @@
     repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(#e7e7e7 0 0.01%, #1a1a1a);
   --label-stroke-color: #fff;
+  --button-text-color: var(--primary-color);
 }
 
 /* mobile 👇🏻 */

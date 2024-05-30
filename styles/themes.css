@@ -9,6 +9,7 @@
       linear-gradient(#e7e7e7 0 0.01%, #1a1a1a);
     --primary-font-regular: 400;
     --primary-font-bold: 700;
+    --button-text-color: var(--primary-color);
   }
 }
 
@@ -21,6 +22,7 @@
     linear-gradient(#e7e7e7 0 0.01%, #1a1a1a);
   --primary-font-regular: 400;
   --primary-font-bold: 700;
+  --button-text-color: var(--primary-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,6 +36,7 @@
       linear-gradient(#007f0c, #004306);
     --primary-font-regular: 465;
     --primary-font-bold: 785;
+    --button-text-color: var(--accent-color);
   }
 }
 
@@ -46,4 +49,5 @@
     linear-gradient(#007f0c, #004306);
   --primary-font-regular: 465;
   --primary-font-bold: 785;
+  --button-text-color: var(--accent-color);
 }

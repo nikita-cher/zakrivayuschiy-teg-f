@@ -99,10 +99,17 @@
 }
 
 .theme-menu__button:disabled,
-.theme-menu__button:hover,
 .theme-menu__button:focus-visible {
   opacity: .6;
   transition: opacity 0.3s;
+}
+
+@media (hover:hover) {
+
+  .theme-menu__button:hover {
+    opacity: .6;
+    transition: opacity 0.3s;
+  }
 }
 
 .theme-menu__button:before {
@@ -239,37 +246,79 @@
   display: flex;
   justify-content: end;
   align-items: end;
-  gap: 7px;
+  gap: 5px;
 }
 
 .card__icon-button {
-  border: none;
   display: flex;
-  align-items: center;
+  border: 2px solid transparent;
   background: transparent;
   cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border-color: currentColor;
+  transition: border-color 0.3s;
 }
 
 .like-icon {
-  block-size: 35px;
+  block-size: 34px;
 }
 
 .card__like-button {
+  position: relative;
   border: 2px solid var(--accent-color);
   padding: 6px 35px;
   background: transparent;
+  transition: box-shadow 0.3s;
   cursor: pointer;
 }
 
+.card__like-button:focus,
+.content__save-button:focus {
+  box-shadow: 2px 2px currentColor;
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+
+.card__like-button:before,
+.content__save-button:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+@media (hover:hover) {
+
+  .card__like-button:hover:before,
+  .content__save-button:hover:before {
+    transform: scaleX(1);
+  }
+}
+
 .button__text {
+  color: var(--button-text-color);
   font-family: var(--accent-font), fantasy;
   font-size: 14px;
   line-height: .9;
+  mix-blend-mode: difference;
 }
 
 /* main article 👆🏻 */
 
 .content__save-button {
+  position: relative;
   align-self: center;
   inline-size: fit-content;
   border: 2px solid var(--accent-color);
@@ -279,11 +328,17 @@
   align-items: center;
   gap: 8px;
   background: var(--primary-color);
+  transition: box-shadow 0.3s;
   cursor: pointer;
 }
 
 .floppy {
   block-size: 21px;
+}
+
+.content__save-button .floppy {
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
 }
 
 /* main 👆🏻 */
