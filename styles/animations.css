@@ -1,2 +1,20 @@
 /* keyframes проекта и анимации иконки "Like" */
 
+@media (prefers-reduced-motion: no-preference) {
+
+  .theme-menu__button:before {
+    animation: current-theme-point 0.5s infinite ease-in-out alternate;
+  }
+}
+
+@keyframes current-theme-point {
+
+  from {
+    translate: 0;
+  }
+
+  to {
+    translate: 4px;
+  }
+}
+

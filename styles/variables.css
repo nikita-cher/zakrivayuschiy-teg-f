@@ -29,6 +29,7 @@
 /* mobile 👇🏻 */
 
 @media (width <= 375px) {
+
   :root {
     --content-area-wdth: 100%;
   }
