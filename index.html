@@ -21,7 +21,11 @@
     <script src="/scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header content-area">
+      <div class="header__logo-group">
+        <a class="header__logo">&lt;/html&gt;</a>
+        <h1 class="header__title">закрывающий тег</h1>
+      </div>
       <nav class="theme-menu header__theme-menu">
         <!-- не менять разметку этого списка ☝🏻 -->
         <ul class="theme-menu__list">
@@ -56,12 +60,72 @@
         </ul>
       </nav>
     </header>
-    <main class="content">
-      
+    <main class="content content-area">
+      <ul class="content__card-list">
+        <li class="content__card-list-item">
+          <!-- размножить -->
+          <article class="content__card">
+            <h2 class="content__card-title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+            <!-- поменять src и alt и добавить следующим loading="lazy" -->
+            <div class="content__card-image-container">
+              <img
+                class="content__card-image"
+                src="/images/section-images/image.png"
+                alt=""
+              >
+              <span class="content__card-image-label" aria-hidden="true">&lt;/html&gt;</span>
+            </div>
+            <div class="content__card-description">
+              <div class="content__card-text-container">
+                <p class="content__card-text">
+                  Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+                </p>
+                <p class="content__card-text">
+                  Место для ваших воспоминаний о начале обучения.
+                </p>
+              </div>
+              <div class="content__card-button-container">
+                <button class="card__icon-button">
+                  <svg
+                    class="like-icon"
+                    viewBox="0 0 39 36"
+                  >
+                    <path
+                      fill="#000"
+                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
+                    />
+                    <path
+                      fill="#f00"
+                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="#fff"
+                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="#f00"
+                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                    />
+                  </svg>
+                </button>
+                <button class="card__like-button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <button class="content__save-button">
+        <svg
+          class="floppy"
+          viewBox="0 0 40 40"
+        >
+          <use href="/images/svg/floppy.svg#floppy">
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
     </main>
-    <footer class="footer">
-
-    </footer>
     <script src="/scripts/like.js"></script>
   </body>
 </html>

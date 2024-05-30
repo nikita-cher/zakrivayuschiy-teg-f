@@ -1,7 +1,7 @@
 @media (prefers-color-scheme: light) {
 
   :root {
-    --page-bg-color: #fff;
+    --primary-color: #fff;
     --accent-color: #000;
     --page-bg-gradient:
       repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
@@ -13,7 +13,7 @@
 }
 
 :root.theme-light {
-  --page-bg-color: #fff;
+  --primary-color: #fff;
   --accent-color: #000;
   --page-bg-gradient:
     repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
@@ -26,7 +26,7 @@
 @media (prefers-color-scheme: dark) {
 
   :root {
-    --page-bg-color: #000;
+    --primary-color: #000;
     --accent-color: #00CC14;
     --page-bg-gradient:
       repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
@@ -38,7 +38,7 @@
 }
 
 :root.theme-dark {
-  --page-bg-color: #000;
+  --primary-color: #000;
   --accent-color: #00CC14;
   --page-bg-gradient:
     repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
