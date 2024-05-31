@@ -7,7 +7,7 @@
     <title>Закрывающий тег</title>
     <!-- иконки -->
     <link rel="icon" href="./images/icons/favicon.ico" sizes="any">
-    <link rel="icon" href="./images/icons/favicon.svg" type="image./svg+xml" sizes="any">
+    <link rel="icon" href="./images/icons/favicon.svg" type="image/svg+xml" sizes="any">
     <link rel="apple-touch-icon" href="./images/icons/favicon.png">
     <!-- иконки -->
     <!-- стили -->
@@ -583,7 +583,7 @@
           class="floppy"
           viewBox="0 0 40 40"
         >
-          <use href="./svg/floppy.svg#floppy">
+          <use href="./svg/floppy.svg#floppy"/>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
@@ -597,17 +597,16 @@
             class="floppy"
             viewBox="0 0 40 40"
             >
-              <use href="./svg/floppy.svg#floppy">
+              <use href="./svg/floppy.svg#floppy"/>
             </svg>
           </div>
           <h2 class="save-dialog__title">Вставьте дискету, чтобы продолжить</h2>
         </div>
-        <button
-          class="save-dialog__button button"
-          onclick="window['save-dialog'].close()"
-        >
-          <span class="button__text">ок</span>
-        </button>
+        <form method="dialog">
+          <button class="save-dialog__button button">
+                <span class="button__text">ок</span>
+            </button>
+        </form>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
