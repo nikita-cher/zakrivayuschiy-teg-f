@@ -575,6 +575,7 @@
         </li>
       </ul>
       <button
+        type="button"
         class="content__save-button button"
         onclick="window['save-dialog'].showModal()"
         aria-controls="save-dialog"
@@ -603,7 +604,12 @@
           <h2 class="save-dialog__title">Вставьте дискету, чтобы продолжить</h2>
         </div>
         <form method="dialog">
-          <button class="save-dialog__button button">ок</button>
+          <button
+            type="submit"
+            class="save-dialog__button button"
+          >
+            <span class="button__text">ок</span>
+          </button>
         </form>
       </dialog>
     </main>
