@@ -54,6 +54,7 @@
 .header__logo {
   font-size: clamp(49px, 2.7104rem + 1.5023vw, 65px);
   white-space: nowrap;
+  user-select: none;
 }
 
 .header__title {
@@ -92,6 +93,7 @@
   text-transform: uppercase;
   transition: opacity 0.3s;
   cursor: pointer;
+  user-select: none;
 }
 
 .theme-menu__button:focus {
@@ -196,38 +198,39 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
+  user-select: none;
 }
 
 .prepare-to {
-
+  filter: saturate(125%) contrast(1.25) opacity(0.95);
 }
 
 .new-beginning {
-
+  filter: contrast(0.55) opacity(0.9);
 }
 
 .failure-fear {
-
+  filter: saturate(125%) blur(0.4px) opacity(0.95);
 }
 
 .pursuit-to-ideal {
-
+  filter: brightness(1.2) saturate(250%) blur(3px) opacity(0.9);
 }
 
 .nearbies {
-
+  filter: brightness(1.25) contrast(1.5) opacity(0.75);
 }
 
 .workaround-strategies {
-
+  filter: drop-shadow(20px 15px 10px rgba(0, 0, 0, 0.75)) opacity(0.95);
 }
 
 .when-give-up {
-
+  filter: contrast(1.25) grayscale(0.5) opacity(0.95);
 }
 
 .here-now {
-
+  filter: brightness(1.3) opacity(0.95);
 }
 
 .content__card-image-label {
@@ -243,6 +246,7 @@
   1px 0 var(--primary-color),
   0 1px var(--primary-color),
   -1px 0 var(--primary-color);
+  user-select: none;
 }
 
 @supports ((text-stroke: ) or (-webkit-text-stroke: )) {
@@ -325,6 +329,7 @@
   background: var(--primary-color);
   transition: box-shadow 0.3s;
   cursor: pointer;
+  user-select: none;
 }
 
 .card__like-button:focus,
@@ -430,6 +435,7 @@
   font-weight: var(--primary-font-regular);
   line-height: 1.5;
   text-transform: uppercase;
+  user-select: none;
 }
 
 .save-dialog__button {
