@@ -198,6 +198,38 @@
   object-position: center;
 }
 
+.prepare-to {
+
+}
+
+.new-beginning {
+
+}
+
+.failure-fear {
+
+}
+
+.pursuit-to-ideal {
+
+}
+
+.nearbies {
+
+}
+
+.workaround-strategies {
+
+}
+
+.when-give-up {
+
+}
+
+.here-now {
+
+}
+
 .content__card-image-label {
   position: absolute;
   inset-inline-end: clamp(11px, 0.3794rem + 1.3146vw, 25px);
@@ -206,7 +238,6 @@
   mix-blend-mode: hard-light;
   font-family: var(--accent-font), fantasy;
   font-size: var(--page-text-s);
-  text-transform: uppercase;
   text-shadow:
   0 -1px var(--primary-color),
   1px 0 var(--primary-color),
@@ -240,6 +271,19 @@
 .content__card-text {
   font-variation-settings: 'wght' var(--primary-font-regular);
   line-height: 1.17;
+}
+
+.content__card-text-link {
+  display: inline-block;
+  border: 2px solid transparent;
+}
+
+.content__card-text-link:focus {
+  outline: none;
+}
+
+.content__card-text-link:focus-visible {
+  border-color: currentColor;
 }
 
 .content__card-button-container {
