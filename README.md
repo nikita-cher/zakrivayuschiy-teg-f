@@ -10,20 +10,20 @@
 
 ## автоматизация публикации
 
-`npm run push` — создание и отправка коммита на **GitHub**
-`npm run fixAndPush` — исправление кода и отправка коммита
+- `npm run push` — создание и отправка коммита на **GitHub**
+- `npm run fixAndPush` — исправление кода и отправка коммита
 
 
 ## форматирование кода
 
 ### форматтер (HTML, CSS и JavaScript)
-`npm run check` — проверка
-`npm run format` — исправление
+- `npm run check` — проверка
+- `npm run format` — исправление
 
 ### линтер (CSS)
-`npm run lint` — проверка
-`npm run lintfix` — исправление
+- `npm run lint` — проверка
+- `npm run lintfix` — исправление
 
 ### общее
-`npm run checkAll` — проверка
-`npm run fixAll` — исправление
+- `npm run checkAll` — проверка
+- `npm run fixAll` — исправление
