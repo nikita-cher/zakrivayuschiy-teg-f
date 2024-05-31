@@ -173,7 +173,6 @@
 .content__card-image-container {
   border: 1px solid var(--accent-color);
   position: relative;
-  border: 1px solid var(--accent-color);
   display: flex;
 }
 
@@ -261,17 +260,8 @@
   line-height: 1.17;
 }
 
-.content__card-text-link {
-  display: inline-block;
-  border: 2px solid transparent;
-}
-
-.content__card-text-link:focus {
-  outline: none;
-}
-
 .content__card-text-link:focus-visible {
-  border-color: currentColor;
+  outline: 2px solid currentColor;
 }
 
 .content__card-button-container {
