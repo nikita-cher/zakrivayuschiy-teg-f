@@ -38,10 +38,6 @@
   font-family: var(--accent-font), fantasy;
 }
 
-.content {
-  margin-block-end: 100px;
-}
-
 .content-area {
   inline-size: var(--content-area-wdth);
 }
@@ -143,6 +139,7 @@
 /* main 👇🏻 */
 
 .content {
+  margin-block-end: 100px;
   display: flex;
   flex-direction: column;
   gap: 50px;
