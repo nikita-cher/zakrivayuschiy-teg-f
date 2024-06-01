@@ -8,11 +8,9 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  padding-block: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 100px;
   background: var(--primary-color) center / cover;
   background-image: var(--page-bg-gradient);
   background-attachment: fixed;
@@ -25,6 +23,7 @@
 /* header 👇🏻 */
 
 .header {
+  margin-block: 100px;
   border: 2px solid var(--accent-color);
   padding:
     clamp(120px, 7.1479rem + 1.5023vw, 136px)
@@ -37,7 +36,11 @@
   gap: 25px;
   background-color: var(--primary-color);
   font-family: var(--accent-font), fantasy;
-  }
+}
+
+.content {
+  margin-block-end: 100px;
+}
 
 .content-area {
   inline-size: var(--content-area-wdth);
@@ -91,14 +94,12 @@
 .theme-menu__button:disabled,
 .theme-menu__button:focus-visible {
   opacity: .6;
-  transition: opacity 0.3s;
 }
 
 @media (hover:hover) {
 
   .theme-menu__button:hover {
     opacity: .6;
-    transition: opacity 0.3s;
   }
 }
 
@@ -123,7 +124,7 @@
   transform: scaleX(0);
   transform-origin: left;
   opacity: 0;
-  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s;
 }
 
 .theme-menu__button:focus-visible:after {
@@ -184,35 +185,35 @@
   user-select: none;
 }
 
-.prepare-to {
-  filter: saturate(125%) contrast(1.25) opacity(0.95);
+.filter-contrast {
+  filter: contrast(1.25) opacity(0.95);
 }
 
-.new-beginning {
-  filter: contrast(0.55) opacity(0.9);
+.filter-grayscale {
+  filter: grayscale(0.75) opacity(0.95);
 }
 
-.failure-fear {
-  filter: saturate(125%) blur(0.4px) opacity(0.95);
+.filter-sepia {
+  filter: sepia(0.25) opacity(0.95);
 }
 
-.pursuit-to-ideal {
-  filter: brightness(1.2) saturate(250%) blur(3px) opacity(0.9);
+.filter-blur {
+  filter: blur(3px) opacity(0.95);
 }
 
-.nearbies {
-  filter: brightness(1.25) contrast(1.5) opacity(0.75);
+.filter-invert {
+  filter: invert(1) opacity(0.95);
 }
 
-.workaround-strategies {
+.filter-shadow {
   filter: drop-shadow(20px 15px 10px rgba(0 0 0 / 0.75)) opacity(0.95);
 }
 
-.when-give-up {
-  filter: contrast(1.25) grayscale(0.5) opacity(0.95);
+.filter-saturate {
+  filter: saturate(2.5) opacity(0.95);
 }
 
-.here-now {
+.filter-brightness {
   filter: brightness(1.3) opacity(0.95);
 }
 
@@ -285,7 +286,6 @@
 
 .card__icon-button:focus-visible {
   border-color: currentColor;
-  transition: border-color 0.3s;
 }
 
 .like-icon {
@@ -306,17 +306,16 @@
   user-select: none;
 }
 
-.card__like-button:focus,
-.content__save-button:focus,
-.save-dialog__button:focus {
-  box-shadow: 2px 2px currentColor;
+.button:focus {
   outline: none;
-  transition: box-shadow 0.3s;
 }
 
-.card__like-button:before,
-.content__save-button:before,
-.save-dialog__button:before {
+.button:focus-visible {
+  box-shadow: 2px 2px currentColor;
+  outline: none;
+}
+
+.button:before {
   content: '';
   position: absolute;
   inset: 0;
@@ -330,9 +329,7 @@
 
 @media (hover:hover) {
 
-  .card__like-button:hover:before,
-  .content__save-button:hover:before,
-  .save-dialog__button:hover:before {
+  .button:hover:before {
     transform: scaleX(1);
   }
 }
@@ -432,10 +429,6 @@
 
 @media (width <= 375px) {
 
-  .content-area {
-    overflow-x: hidden;
-  }
-
   .content__save-button {
     flex-direction: column;
   }
@@ -448,7 +441,6 @@
     max-inline-size: 341px;
     inline-size: 100%;
     padding-inline: 40px;
-    overflow-x: hidden;
   }
 }
 
