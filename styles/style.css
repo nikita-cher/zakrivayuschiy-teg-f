@@ -205,7 +205,7 @@
 }
 
 .workaround-strategies {
-  filter: drop-shadow(20px 15px 10px rgba(0, 0, 0, 0.75)) opacity(0.95);
+  filter: drop-shadow(20px 15px 10px rgba(0 0 0 / 0.75)) opacity(0.95);
 }
 
 .when-give-up {

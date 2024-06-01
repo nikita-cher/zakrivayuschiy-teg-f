@@ -79,6 +79,7 @@
 }
 
 @keyframes heart-beat {
+
   from {
     scale: 1;
   }
@@ -94,6 +95,7 @@
 }
 
 @keyframes heart-sparks {
+  
   from {
     opacity: 0;
   }
